@@ -59,7 +59,7 @@ disk.
 ## File Layout
 
 ```
-F:\eslem excel proje\
+F:\excel agent\
 ├── main.py                # Terminal chat entry point
 ├── pyproject.toml         # uv project definition and dependencies
 ├── uv.lock                # uv lockfile
@@ -268,6 +268,7 @@ agent_data/
 
   The Ollama daemon must be running (it normally starts automatically
   after install).
+
 - **Past sessions** — older sessions are kept; the agent can search the
   three most recent sessions (`search_session_history=True`,
   `num_history_sessions=3`) when context is needed.
@@ -330,6 +331,7 @@ Fixes, in order of preference:
    ```
 
    You should see `ollama.exe` and `ollama app.exe`.
+
 3. **Use the full path** (works without PATH):
 
    ```cmd
@@ -337,9 +339,8 @@ Fixes, in order of preference:
    ```
 
 4. **Manually add to PATH** if it really is missing:
-
    - Win + R → `sysdm.cpl` → `Advanced` → `Environment Variables`
-   - Under *User variables*, select `Path` → `Edit` → `New`
+   - Under _User variables_, select `Path` → `Edit` → `New`
    - Add: `C:\Users\<your-user>\AppData\Local\Programs\Ollama`
    - OK out, close all shells, open a fresh one, retry.
 
@@ -453,7 +454,7 @@ OPENAI_API_KEY=sk-...your_key
 3. Open `OAuth consent screen`. Choose External. Add your Google
    account as a test user.
 4. Go to `Credentials > Create credentials > OAuth client ID > Desktop
-   app` and create a new OAuth client.
+app` and create a new OAuth client.
 5. Download the JSON file and save it as
    **`F:\excel agent\credentials.json`**.
 
